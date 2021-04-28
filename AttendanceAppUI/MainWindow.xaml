@@ -10,11 +10,13 @@
         <DockPanel>
             <Button DockPanel.Dock="Top" Height="50">Top</Button>
             <Button DockPanel.Dock="Bottom" Height="20">Bottom</Button>
-            <Button DockPanel.Dock="Left" Width="30">Left</Button>
-            <Button DockPanel.Dock="Left" Width="200">Left</Button>
+            <Button DockPanel.Dock="Left" Width="30">Left</Button>            
             <StackPanel AllowDrop="True" >
-                <Image Source="/imgs/drag-drop.png"/>
+                
             </StackPanel>
         </DockPanel>
+        <Grid.ColumnDefinitions>
+            
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>
