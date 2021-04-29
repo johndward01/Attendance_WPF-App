@@ -12,6 +12,6 @@ namespace AttendanceAppUI
         public string EndTime { get; set; }
         public string UserEmail { get; set; }
         public int DurationInMinutes { get; set; }
-        public int Participants { get; set; }
+        public int TotalParticipants { get; set; }
     }
 }

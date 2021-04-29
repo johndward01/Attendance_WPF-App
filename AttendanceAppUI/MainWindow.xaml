@@ -7,16 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DockPanel>
+        <DockPanel LastChildFill="False">
             <Button DockPanel.Dock="Top" Height="50">Top</Button>
             <Button DockPanel.Dock="Bottom" Height="20">Bottom</Button>
-            <Button DockPanel.Dock="Left" Width="30">Left</Button>            
-            <StackPanel AllowDrop="True" >
-                
-            </StackPanel>
-        </DockPanel>
-        <Grid.ColumnDefinitions>
+            <Button DockPanel.Dock="Left" Width="50">Left</Button>
+            <Rectangle Stroke="Black" Fill="WhiteSmoke" Width="200">
+            </Rectangle>
             
-        </Grid.ColumnDefinitions>
+        </DockPanel>
+
+
     </Grid>
 </Window>

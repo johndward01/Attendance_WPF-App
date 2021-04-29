@@ -13,5 +13,12 @@ namespace AttendanceAppUI
     /// </summary>
     public partial class App : Application
     {
-    }
+		private void Application_Startup(object sender, StartupEventArgs e)
+		{
+			// Create the startup window
+			MainWindow wnd = new MainWindow();
+			// Show the window
+			wnd.Show();
+		}
+	}
 }

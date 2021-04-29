@@ -1,10 +1,11 @@
-﻿using System;
+﻿using AttendanceAppUI.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AttendanceAppUI
 {
-    public class ZoomCSVData
+    public class ZoomCSVData : ICSV_Data
     {
         public string Name { get; set; }
         public string UserEmail { get; set; }
