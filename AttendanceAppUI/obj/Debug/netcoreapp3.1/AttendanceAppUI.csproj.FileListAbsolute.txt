@@ -17,7 +17,6 @@ C:\Users\johnd\Desktop\Projects\AttendanceApp\AttendanceAppUI\obj\Debug\netcorea
 C:\Users\johnd\Desktop\Projects\AttendanceApp\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.dll
 C:\Users\johnd\Desktop\Projects\AttendanceApp\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.pdb
 C:\Users\johnd\Desktop\Projects\AttendanceApp\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.genruntimeconfig.cache
-C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.csprojAssemblyReference.cache
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI_MarkupCompile.cache
@@ -37,3 +36,11 @@ C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\net
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.AssemblyInfo.cs
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.csproj.CoreCompileInputs.cache
 C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.genruntimeconfig.cache
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\themes\ColourfulDarkTheme.baml
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\themes\ColourfulLightTheme.baml
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\themes\ColourfulDarkTheme.g.cs
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\themes\ColourfulLightTheme.g.cs
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\DarkTheme.baml
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\LightTheme.baml
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\DarkTheme.g.cs
+C:\Users\johnd\Desktop\Projects\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\LightTheme.g.cs

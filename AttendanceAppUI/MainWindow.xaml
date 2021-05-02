@@ -5,17 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AttendanceAppUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Height="450" Width="800"
+        Style="{DynamicResource CustomWindowStyle}"
+        Title="Zoom Attendance Report Converter" >
     <Grid>
-        <DockPanel LastChildFill="False">
-            <Button DockPanel.Dock="Top" Height="50">Top</Button>
-            <Button DockPanel.Dock="Bottom" Height="20">Bottom</Button>
-            <Button DockPanel.Dock="Left" Width="50">Left</Button>
-            <Rectangle Stroke="Black" Fill="WhiteSmoke" Width="200">
-            </Rectangle>
-            
-        </DockPanel>
-
-
+        
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
+                <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemStyle}">
+                    <MenuItem Header="Text File (txt)" Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="XML (xml)"       Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="C# File (cs)"    Template="{DynamicResource SingleDropDownMenuItem}"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Width="150" Margin="0,20,0,0">
+            <StackPanel>
+                <CheckBox Content="A CheckBox Here" Margin="5"/>
+                <CheckBox Content="A CheckBox Here" Margin="5"/>
+                <CheckBox Content="A CheckBox Here" Margin="5"/>
+                <CheckBox Content="A CheckBox Here" Margin="5"/>
+                <RadioButton Content="A RadioButton Here" Margin="5"/>
+                <RadioButton Content="A RadioButton Here" Margin="5"/>
+                <RadioButton Content="A RadioButton Here" Margin="5"/>
+                <Slider Minimum="0" Maximum="100" Value="16" Margin="5"/>
+                <Slider Minimum="0" Maximum="100" Value="32" Margin="5"/>
+                <Button Content="A Button Here" Height="40" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
