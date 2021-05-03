@@ -7,10 +7,17 @@
         mc:Ignorable="d"
         Height="450" Width="800"
         Style="{DynamicResource CustomWindowStyle}"
-        Title="Zoom Attendance Report Converter" >
-    <Grid>
-        
-        <Menu VerticalAlignment="Top">
+        Title="Zoom Attendance Report Converter" >    
+    <Grid>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*" />
+            <ColumnDefinition Width="650*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="430*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top">
             <MenuItem Header="File">
                 <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
                 <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemStyle}">
@@ -19,20 +26,44 @@
                     <MenuItem Header="C# File (cs)"    Template="{DynamicResource SingleDropDownMenuItem}"/>
                 </MenuItem>
             </MenuItem>
+            <MenuItem Header="Preferences">
+                <MenuItem Header="Theme">
+                    <MenuItem Header="Dark"/>
+                    <MenuItem Header="Light"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="Tutorials">
+                </MenuItem>
+            </MenuItem>
         </Menu>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Width="150" Margin="0,20,0,0">
-            <StackPanel>
-                <CheckBox Content="A CheckBox Here" Margin="5"/>
-                <CheckBox Content="A CheckBox Here" Margin="5"/>
-                <CheckBox Content="A CheckBox Here" Margin="5"/>
-                <CheckBox Content="A CheckBox Here" Margin="5"/>
-                <RadioButton Content="A RadioButton Here" Margin="5"/>
-                <RadioButton Content="A RadioButton Here" Margin="5"/>
-                <RadioButton Content="A RadioButton Here" Margin="5"/>
-                <Slider Minimum="0" Maximum="100" Value="16" Margin="5"/>
-                <Slider Minimum="0" Maximum="100" Value="32" Margin="5"/>
-                <Button Content="A Button Here" Height="40" Margin="5"/>
-            </StackPanel>
-        </GroupBox>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="30*" />
+            </Grid.RowDefinitions>
+            <CheckBox Grid.Column="0" Grid.Row="0" Content="A CheckBox Here" VerticalAlignment="Top" Margin="0,5,0,5"/>
+            <CheckBox Grid.Column="0" Grid.Row="1" Content="A CheckBox Here" VerticalAlignment="Center" Margin="0,5,0,5"/>
+            <CheckBox Grid.Column="0" Grid.Row="2" Content="A CheckBox Here" VerticalAlignment="Bottom" Margin="0,5,0,5"/>
+                <RadioButton Grid.Column="0" Grid.Row="3" Content="A RadioButton Here" VerticalAlignment="Top" Margin="0,5,0,5"/>
+                <RadioButton Grid.Column="0" Grid.Row="4" Content="A RadioButton Here" VerticalAlignment="Center" Margin="0,5,0,5"/>
+                <RadioButton Grid.Column="0" Grid.Row="5" Content="A RadioButton Here" VerticalAlignment="Bottom" Margin="0,5,0,5"/>
+                <Slider Grid.Column="0" Grid.Row="6" Minimum="0" Maximum="100" Value="16" VerticalAlignment="Top" Margin="5"/>
+                <Slider Grid.Column="0" Grid.Row="7" Minimum="0" Maximum="100" Value="32" VerticalAlignment="Bottom" Margin="5"/>
+                <Button Grid.Column="0" Grid.Row="8" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Center"/>
+                <Button Grid.Column="0" Grid.Row="9" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,5,5">
+            <Image Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform"/>
+            <Image Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" Width="500" Stretch="Uniform"/>
+        </Grid>
+            
     </Grid>
 </Window>

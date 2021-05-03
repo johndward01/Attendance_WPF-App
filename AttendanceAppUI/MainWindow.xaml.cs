@@ -23,7 +23,17 @@ namespace AttendanceAppUI
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
+        private void DragAndDrop_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void DragAndDrop_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
