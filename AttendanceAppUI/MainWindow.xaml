@@ -47,22 +47,26 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="30*" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-            <CheckBox Grid.Column="0" Grid.Row="0" Content="A CheckBox Here" VerticalAlignment="Top" Margin="0,5,0,5"/>
-            <CheckBox Grid.Column="0" Grid.Row="1" Content="A CheckBox Here" VerticalAlignment="Center" Margin="0,5,0,5"/>
-            <CheckBox Grid.Column="0" Grid.Row="2" Content="A CheckBox Here" VerticalAlignment="Bottom" Margin="0,5,0,5"/>
+                <CheckBox Grid.Column="0" Grid.Row="0" Content="A CheckBox Here" VerticalAlignment="Top" Margin="0,5,0,5"/>
+                <CheckBox Grid.Column="0" Grid.Row="1" Content="A CheckBox Here" VerticalAlignment="Center" Margin="0,5,0,5"/>
+                <CheckBox Grid.Column="0" Grid.Row="2" Content="A CheckBox Here" VerticalAlignment="Bottom" Margin="0,5,0,5"/>           
+            
                 <RadioButton Grid.Column="0" Grid.Row="3" Content="A RadioButton Here" VerticalAlignment="Top" Margin="0,5,0,5"/>
                 <RadioButton Grid.Column="0" Grid.Row="4" Content="A RadioButton Here" VerticalAlignment="Center" Margin="0,5,0,5"/>
                 <RadioButton Grid.Column="0" Grid.Row="5" Content="A RadioButton Here" VerticalAlignment="Bottom" Margin="0,5,0,5"/>
+            
                 <Slider Grid.Column="0" Grid.Row="6" Minimum="0" Maximum="100" Value="16" VerticalAlignment="Top" Margin="5"/>
                 <Slider Grid.Column="0" Grid.Row="7" Minimum="0" Maximum="100" Value="32" VerticalAlignment="Bottom" Margin="5"/>
+            
                 <Button Grid.Column="0" Grid.Row="8" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Center"/>
                 <Button Grid.Column="0" Grid.Row="9" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,5,5">
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,25,15" AllowDrop="True">
             <Image Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform"/>
-            <Image Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" Width="500" Stretch="Uniform"/>
+            <Image Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Stretch="Uniform" Margin="0,0,100,0"/>
         </Grid>
             
     </Grid>
