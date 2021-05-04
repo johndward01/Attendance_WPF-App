@@ -17,7 +17,8 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="430*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top">
+        
+        <Menu Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
             <MenuItem Header="File">
                 <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
                 <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemStyle}">
@@ -40,15 +41,21 @@
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
-                
-            </Grid.RowDefinitions>
-                
-                <Button Grid.Column="0" Grid.Row="0" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
+                <RowDefinition Height="auto" />                
+            </Grid.RowDefinitions>                
+            <Button Grid.Column="0" Grid.Row="0" Content="A Button Here" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="1" AllowDrop="True">
+        
+        <Grid x:Name="FileDropLocation" Grid.Row="1" Grid.Column="1" AllowDrop="True" Drop="FileDropLocation_Drop">
+            <Label x:Name="FileNameLabel"
+                   Content="Placeholder"
+                   Grid.Row="0" Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,0,100,0"
+                   FontSize="16"/>
             <Border BorderBrush="#282828" BorderThickness="2, 0, 2, 2"/>
-                <Image Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
+            <Image Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
             <Image Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Stretch="Uniform" Margin="0,0,100,0"/>
         </Grid>
 

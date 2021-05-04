@@ -26,14 +26,16 @@ namespace AttendanceAppUI
 
         }
 
-        private void DragAndDrop_PreviewMouseMove(object sender, MouseEventArgs e)
+        private void FileDropLocation_Drop(object sender, DragEventArgs e)
         {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-        }
+                var filename = System.IO.Path.GetFileName(files[0]);
 
-        private void DragAndDrop_PreviewMouseUp(object sender, MouseButtonEventArgs e)
-        {
-
+                FileNameLabel.Content = filename;
+            }
         }
     }
 }
