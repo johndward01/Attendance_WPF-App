@@ -38,6 +38,7 @@
                 </MenuItem>
             </MenuItem>
         </Menu>
+        
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
@@ -46,29 +47,23 @@
             <Button Grid.Column="0" Grid.Row="0" Content="View Content" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
             <Button Grid.Column="0" Grid.Row="1" Content="Create Report" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
         </Grid>
-        
+
         <Grid x:Name="FileDropLocation" Grid.Row="1" Grid.Column="1" AllowDrop="True" Drop="FileDropLocation_Drop">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="#282828" BorderThickness="2,2,2,0">
-                <Label x:Name="FileNameLabel"
+            <Label x:Name="FileNameLabel"
                    Content="Placeholder"
                    Grid.Row="0" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
-                   Margin="0,0,100,0"
-                   FontSize="16"/>    
+                   FontSize="16"/>
+            <Border Grid.Row="1" BorderBrush="#282828" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Grid.Row="1" Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Fill" />
             </Border>
-
-            <Border Grid.Row="1" BorderBrush="#282828" BorderThickness="2,0,2,2">
-                <Image Grid.Row="1" Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Stretch="Uniform" Margin="0,0,100,0"/>                            
-            </Border>
-                <Image Grid.Row="1" Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
-            
+            <Image Grid.Row="1" Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
         </Grid>
-
-
+        
     </Grid>
 </Window>
