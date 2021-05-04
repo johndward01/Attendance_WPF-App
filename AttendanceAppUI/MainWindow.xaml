@@ -27,14 +27,12 @@
                     <MenuItem Header="C# File (cs)"    Template="{DynamicResource SingleDropDownMenuItem}"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Preferences">
-                <MenuItem Header="Theme">
-                    <MenuItem Header="Dark"/>
-                    <MenuItem Header="Light"/>
-                </MenuItem>
+            <MenuItem Header="Themes">
+                    <MenuItem Header="Dark" Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="Light" Template="{DynamicResource SingleDropDownMenuItem}"/>
             </MenuItem>
             <MenuItem Header="Help">
-                <MenuItem Header="Tutorials">
+                <MenuItem Header="Tutorials" Template="{DynamicResource SingleDropDownMenuItem}">
                 </MenuItem>
             </MenuItem>
         </Menu>
@@ -54,7 +52,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Label x:Name="FileNameLabel"
-                   Content="Placeholder"
+                   Content="File Name"
                    Grid.Row="0" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
