@@ -51,14 +51,13 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="#282828" BorderThickness="2,0,0,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Border Grid.Row="0" BorderBrush="#282828" BorderThickness="2,0,0,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,5,0,0">
                 <Label x:Name="FileNameLabel"
                    Content="File Name"
                    Grid.Row="0" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
-                   FontSize="16"
-                   Margin="5"/>
+                   FontSize="16"/>
             </Border>
             
             <Border Grid.Row="1" BorderBrush="#282828" BorderThickness="2,0,2,2" HorizontalAlignment="Center" VerticalAlignment="Center">

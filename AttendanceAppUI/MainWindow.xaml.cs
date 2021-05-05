@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,17 @@ namespace AttendanceAppUI
 
                 var filename = System.IO.Path.GetFileName(files[0]);
 
+                var list = new List<string>();
+                foreach (var file in files)
+                {
+                    var sr = new StreamReader(file);
+                    var rawAttendanceString = sr.ReadToEnd();
+                    list.Add(rawAttendanceString);
+                }
+
                 FileNameLabel.Content = filename;
+                // TODO
+                //FileDropLocation.
             }
         }
     }
