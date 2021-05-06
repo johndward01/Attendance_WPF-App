@@ -22,9 +22,9 @@
             <MenuItem Header="File">
                 <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
                 <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemStyle}">
-                    <MenuItem Header="Text File (txt)" Template="{DynamicResource SingleDropDownMenuItem}"/>
-                    <MenuItem Header="XML (xml)"       Template="{DynamicResource SingleDropDownMenuItem}"/>
-                    <MenuItem Header="C# File (cs)"    Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="Text File ( .txt )" Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="XML ( .xml )"       Template="{DynamicResource SingleDropDownMenuItem}"/>
+                    <MenuItem Header="C# File ( .cs )"    Template="{DynamicResource SingleDropDownMenuItem}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Themes">
