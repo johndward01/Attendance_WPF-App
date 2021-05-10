@@ -41,9 +41,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />                
+                <RowDefinition Height="auto" />                
             </Grid.RowDefinitions>                
             <Button Grid.Column="0" Grid.Row="0" Content="View Content" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
-            <Button Grid.Column="0" Grid.Row="1" Content="Create Report" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
+            <Button Grid.Column="0" Grid.Row="1" Content="Create Report" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>
         </Grid>
 
         <Grid x:Name="FileDropLocation" Grid.Row="1" Grid.Column="1" AllowDrop="True" Drop="FileDropLocation_Drop">

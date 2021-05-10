@@ -45,7 +45,7 @@ namespace AttendanceAppUI
 
                 FileNameLabel.Content = filename;
                 // TODO
-                //FileDropLocation.
+                //FileDropLocation
             }
         }
     }
