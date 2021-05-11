@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Height="450" Width="800"
         Style="{DynamicResource CustomWindowStyle}"
-        Title="Zoom Attendance Report Converter" >    
-    <Grid>        
+        Title="Zoom Attendance Report Converter" >
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150*" />
             <ColumnDefinition Width="650*" />
@@ -17,7 +17,7 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="430*"/>
         </Grid.RowDefinitions>
-        
+
         <Menu Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
             <MenuItem Header="File">
                 <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
@@ -28,44 +28,40 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Themes">
-                    <MenuItem Header="Dark" Template="{DynamicResource SingleDropDownMenuItem}"/>
-                    <MenuItem Header="Light" Template="{DynamicResource SingleDropDownMenuItem}"/>
+                <MenuItem Header="Dark" Template="{DynamicResource SingleDropDownMenuItem}"/>
+                <MenuItem Header="Light" Template="{DynamicResource SingleDropDownMenuItem}"/>
             </MenuItem>
             <MenuItem Header="Help">
                 <MenuItem Header="Tutorials" Template="{DynamicResource SingleDropDownMenuItem}">
                 </MenuItem>
             </MenuItem>
         </Menu>
-        
+
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />                
-                <RowDefinition Height="auto" />                
-            </Grid.RowDefinitions>                
-            <Button Grid.Column="0" Grid.Row="0" Content="View Content" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>            
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Content="View Content" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>
             <Button Grid.Column="0" Grid.Row="1" Content="Create Report" Height="40" Margin="5" Cursor="Hand" VerticalAlignment="Bottom"/>
         </Grid>
 
-        <Grid x:Name="FileDropLocation" Grid.Row="1" Grid.Column="1" AllowDrop="True" Drop="FileDropLocation_Drop">
+        <Grid Grid.Row="1" Grid.Column="1" AllowDrop="True">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" BorderBrush="#282828" BorderThickness="2,0,0,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,5,0,0">
-                <Label x:Name="FileNameLabel"
-                   Content="File Name"
-                   Grid.Row="0" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Top"
-                   FontSize="16"/>
-            </Border>
-            
-            <Border Grid.Row="1" BorderBrush="#282828" BorderThickness="2,0,2,2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image Grid.Row="1" Source="/imgs/drag-drop-transparent.png" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Fill" />
-            </Border>
+            <TextBox 
+                   x:Name="FileDropLocation"
+                   Grid.Row="1" 
+                   AllowDrop="True"
+                   DragEnter="TextBox_DragEnter"
+                   PreviewDragOver="TextBox_PreviewDragOver"
+                   Drop="TextBox_Drop">
+            </TextBox>
             <Image Grid.Row="1" Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
         </Grid>
-        
+
     </Grid>
 </Window>

@@ -27,7 +27,19 @@ namespace AttendanceAppUI
 
         }
 
-        private void FileDropLocation_Drop(object sender, DragEventArgs e)
+        private void TextBox_PreviewDragOver(object sender, DragEventArgs e)
+        {
+            e.Effects = DragDropEffects.Copy;
+            e.Handled = true;
+        }
+
+        private void TextBox_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effects = DragDropEffects.Copy;
+            e.Handled = true;
+        }
+
+        private void TextBox_Drop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -43,10 +55,15 @@ namespace AttendanceAppUI
                     list.Add(rawAttendanceString);
                 }
 
-                FileNameLabel.Content = filename;
-                // TODO
-                //FileDropLocation
+                var final = "";
+                foreach (var str in list)
+                {
+                    final += str;
+                }
+
+                FileDropLocation.Text = final;
             }
         }
+
     }
 }
