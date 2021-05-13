@@ -43,26 +43,18 @@ namespace AttendanceAppUI
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
-                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                string[] csvPath = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-                var filename = System.IO.Path.GetFileName(files[0]);
+                var filename = System.IO.Path.GetFileName(csvPath[0]);
+                var lines = File.ReadAllLines(csvPath[0]);
+                // TODO
+                // var zoomReports = lines.Select();
 
-                var list = new List<string>();
-                foreach (var file in files)
-                {
-                    var sr = new StreamReader(file);
-                    var rawAttendanceString = sr.ReadToEnd();
-                    list.Add(rawAttendanceString);
-                }
+                
 
-                var final = "";
-                foreach (var str in list)
-                {
-                    final += str;
-                }
-
-                FileDropLocation.Text = final;
+                //FileDropLocation.Text = final;
             }
+
         }
 
     }
