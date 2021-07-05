@@ -11,6 +11,14 @@ namespace AttendanceAppUI
         {
             var z = new ZoomModel();
             var s = new Student();
+
+            var cells = line.Split(',');
+
+
+
+
+
+
             throw new NotImplementedException();
         }
     }

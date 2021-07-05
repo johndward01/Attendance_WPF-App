@@ -6,11 +6,12 @@ using System.Text;
 
 namespace AttendanceAppUI.Models
 {
-    public class ZoomModel 
+    public class ZoomModel : INotifyPropertyChanged
     {
         public string ClassTitle { get; set; }
         public List<Student> Students { get; set; }
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 
 

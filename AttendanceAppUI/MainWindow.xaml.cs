@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AttendanceAppUI
 {
@@ -43,16 +30,18 @@ namespace AttendanceAppUI
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
-                string[] csvPath = (string[])e.Data.GetData(DataFormats.FileDrop);
+                string final = "Name | Email | Total Duration | Is Guest\n\n";
+                string[] fileLocationsArray = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-                var filename = System.IO.Path.GetFileName(csvPath[0]);
-                var lines = File.ReadAllLines(csvPath[0]);
-                // TODO
-                // var zoomReports = lines.Select();
+                string filename = System.IO.Path.GetFileName(fileLocationsArray[0]);
+                string[] lines = File.ReadAllLines(fileLocationsArray[0]);
 
-                
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    final += $"{lines[i]}\n";
+                }
 
-                //FileDropLocation.Text = final;
+                FileDropLocation.Text = $"{filename}\n\n{final}";
             }
 
         }
