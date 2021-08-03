@@ -8,8 +8,8 @@ namespace AttendanceAppUI.ViewModels
     {
         public CommandViewModel(string displayName, ICommand command)
         {
-            base.DisplayName = displayName;
-            this.Command = command ?? throw new ArgumentNullException("command");
+            Name = displayName;
+            Command = command ?? throw new ArgumentNullException("command");
         }
 
         public ICommand Command { get; private set; }

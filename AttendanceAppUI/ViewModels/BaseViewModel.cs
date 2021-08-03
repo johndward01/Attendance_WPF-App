@@ -6,50 +6,31 @@ using System.Text;
 
 namespace AttendanceAppUI.Views
 {
-    abstract class BaseViewModel : INotifyPropertyChanged, IDisposable
+    abstract class BaseViewModel : INotifyPropertyChanged
     {
+        string _name = "";
 
-        public string DisplayName { get; set; }
-        public bool ThrowOnInvalidPropertyName { get; set; }
+        public string Name 
+        {
+            get => _name;
+            set
+            {
+                if (_name == value)
+                {
+                    return;
+                }
 
-        #region https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern
-        // In ViewModelBase.cs 
+                _name = value;
+                OnPropertyChanged(nameof(Name));
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
+
+        void OnPropertyChanged(string name)
         {
-            VerifyPropertyName(propertyName);
-            PropertyChangedEventHandler handler = this.PropertyChanged;
-            if (handler != null)
-            {
-                var e = new PropertyChangedEventArgs(propertyName);
-                handler(this, e);
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        [Conditional("DEBUG")]
-        [DebuggerStepThrough]
-        public void VerifyPropertyName(string propertyName)
-        {
-            // Verify that the property name matches a real, 
-            // public, instance property on this object. 
-            if (TypeDescriptor.GetProperties(this)[propertyName] == null)
-            {
-                string msg = "Invalid property name: " + propertyName;
-                if (ThrowOnInvalidPropertyName)
-                {
-                    throw new Exception(msg);
-                }
-                else
-                {
-                    Debug.Fail(msg);
-                }
-            }
-        }
-        #endregion
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

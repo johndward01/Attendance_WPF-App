@@ -78,7 +78,6 @@ C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\bin\Debug
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\bin\Debug\netcoreapp3.1\AttendanceAppUI.runtimeconfig.dev.json
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\bin\Debug\netcoreapp3.1\AttendanceAppUI.dll
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\bin\Debug\netcoreapp3.1\AttendanceAppUI.pdb
-C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.csproj.AssemblyReference.cache
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\ColourfulDarkTheme.baml
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\ColourfulLightTheme.baml
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\Themes\DarkTheme.baml

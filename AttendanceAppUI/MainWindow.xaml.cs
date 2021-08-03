@@ -41,7 +41,7 @@ namespace AttendanceAppUI
                     final += $"{lines[i]}\n";
                 }
 
-                FileDropLocation.Text = $"{filename}\n\n{final}";
+                DataContext = $"{filename}\n\n{final}";
             }
 
         }

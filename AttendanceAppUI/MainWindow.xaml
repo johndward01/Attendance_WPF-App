@@ -53,15 +53,17 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox 
-                   x:Name="FileDropLocation"
-                   Grid.Row="1" 
-                   AllowDrop="True"
-                   DragEnter="TextBox_DragEnter"
-                   PreviewDragOver="TextBox_PreviewDragOver"
-                   Drop="TextBox_Drop">
-            </TextBox>
+            
             <Image Grid.Row="1" Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
+            <DataGrid 
+                Grid.Row="1" 
+                HorizontalGridLinesBrush="#FF003AD4" 
+                VerticalGridLinesBrush="#FF003AD4"
+                DragDrop.Drop="TextBox_Drop">
+                <DataGrid.Background>
+                    <ImageBrush/>
+                </DataGrid.Background>
+            </DataGrid>
         </Grid>
 
     </Grid>
