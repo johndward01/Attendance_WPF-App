@@ -99,3 +99,5 @@ C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.dll
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.pdb
 C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.genruntimeconfig.cache
+C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.csproj.AssemblyReference.cache
+C:\Users\johnd\Desktop\Projects\wpf\Attendance_WPF-App\AttendanceAppUI\obj\Debug\netcoreapp3.1\AttendanceAppUI.GeneratedMSBuildEditorConfig.editorconfig

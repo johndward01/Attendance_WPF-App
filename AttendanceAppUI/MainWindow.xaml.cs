@@ -11,7 +11,6 @@ namespace AttendanceAppUI
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void TextBox_PreviewDragOver(object sender, DragEventArgs e)
@@ -33,7 +32,7 @@ namespace AttendanceAppUI
                 string final = "Name | Email | Total Duration | Is Guest\n\n";
                 string[] fileLocationsArray = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-                string filename = System.IO.Path.GetFileName(fileLocationsArray[0]);
+                string filename = Path.GetFileName(fileLocationsArray[0]);
                 string[] lines = File.ReadAllLines(fileLocationsArray[0]);
 
                 for (int i = 1; i < lines.Length; i++)
@@ -46,5 +45,9 @@ namespace AttendanceAppUI
 
         }
 
+        private void CreateClass_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

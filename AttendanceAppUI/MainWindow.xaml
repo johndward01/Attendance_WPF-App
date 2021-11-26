@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:AttendanceAppUI"
         mc:Ignorable="d"
         Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
         Style="{DynamicResource CustomWindowStyle}"
         Title="Zoom Attendance Report Converter" >
     <Grid>
@@ -14,46 +15,43 @@
             <ColumnDefinition Width="650*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="430*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Menu Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-            <MenuItem Header="File">
-                <MenuItem Header="Save"       Template="{DynamicResource SingleDropDownMenuItem}"/>
-                <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemStyle}">
-                    <MenuItem Header="Text File ( .txt )" Template="{DynamicResource SingleDropDownMenuItem}"/>
-                    <MenuItem Header="XML ( .xml )"       Template="{DynamicResource SingleDropDownMenuItem}"/>
-                    <MenuItem Header="C# File ( .cs )"    Template="{DynamicResource SingleDropDownMenuItem}"/>
-                </MenuItem>
-            </MenuItem>
-            <MenuItem Header="Themes">
-                <MenuItem Header="Dark" Template="{DynamicResource SingleDropDownMenuItem}"/>
-                <MenuItem Header="Light" Template="{DynamicResource SingleDropDownMenuItem}"/>
-            </MenuItem>
-            <MenuItem Header="Help">
-                <MenuItem Header="Tutorials" Template="{DynamicResource SingleDropDownMenuItem}">
-                </MenuItem>
-            </MenuItem>
-        </Menu>
 
-        <Grid Grid.Row="1" Grid.Column="0">
+
+        <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Button Grid.Column="0" Grid.Row="1" Content="View Totals" Height="40" Margin="5,5,5,0" Cursor="Hand" VerticalAlignment="Bottom"/>
-            <Button Grid.Column="0" Grid.Row="2" Content="Save Report" Height="40" Margin="5,5,5,10" Cursor="Hand" VerticalAlignment="Bottom"/>
             
+            <Button Grid.Column="0"
+                    Grid.Row="1"
+                    Content="Create Class" 
+                    Height="40" 
+                    Margin="5,10,5,0" 
+                    Cursor="Hand" 
+                    VerticalAlignment="Bottom"
+                    Click="CreateClass_Click"/>
+            
+            <Button Grid.Column="0"
+                    Grid.Row="2" 
+                    Content="Save Report"
+                    Height="40" 
+                    Margin="5,5,5,10"
+                    Cursor="Hand" 
+                    VerticalAlignment="Bottom"/>
+
         </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="1" AllowDrop="True">
+        <Grid Grid.Column="1" AllowDrop="True">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
+
             <Image Grid.Row="1" Source="/imgs/tc2.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Stretch="Uniform" Margin="0,0,25,15"/>
             <DataGrid 
                 Grid.Row="1" 
