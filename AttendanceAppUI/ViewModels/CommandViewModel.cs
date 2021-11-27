@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 namespace AttendanceAppUI.ViewModels
 {
-    internal class CommandViewModel : BaseViewModel
+    internal class CommandViewModel : ViewModelBase
     {
         public CommandViewModel(string displayName, ICommand command)
         {
@@ -13,6 +13,7 @@ namespace AttendanceAppUI.ViewModels
         }
 
         public ICommand Command { get; private set; }
+        public string Name { get; private set; }
     }
     
 }

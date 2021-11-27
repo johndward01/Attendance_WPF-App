@@ -14,17 +14,26 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
 
-        <TextBlock Grid.Row="0" Text="Class Name" Margin="10"/>
-        <TextBox Grid.Row="1" Text="Class name here"/>
-
-        <TextBlock Grid.Row="2" Text="Start Date"/>
-        <DatePicker Grid.Row="3"/>
+        <TextBox Grid.Row="0"
+                 Padding="5"
+                 Text="Class name here"/>
+        <TextBlock Grid.Row="1"
+                   Padding="5"
+                   Text="Start Date"
+                   TextAlignment="Center"/>
+        <DatePicker Grid.Row="2"/>
+        <TextBlock Grid.Row="3"
+                   Padding="5"
+                   Text="End Date"
+                   TextAlignment="Center"/>
+        <DatePicker Grid.Row="4"/>
 
 
     </Grid>
