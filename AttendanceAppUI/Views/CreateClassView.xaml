@@ -4,12 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AttendanceAppUI.Views"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Margin="20 10" >
-        
+    <Grid Margin="20 10">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -19,21 +20,52 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-
         <TextBox Grid.Row="0"
+                 Margin="10"
                  Padding="5"
+                 FontSize="24"
                  Text="Class name here"/>
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Margin="10"
+                 Padding="5"
+                 FontSize="24"
+                 Text="Start Date"/>
+        <TextBox Grid.Row="0"
+                 Grid.Column="2"
+                 Margin="10"
+                 Padding="5"
+                 FontSize="24"
+                 Text="End Date"/>
         <TextBlock Grid.Row="1"
                    Padding="5"
+                   FontSize="18"
                    Text="Start Date"
                    TextAlignment="Center"/>
-        <DatePicker Grid.Row="2"/>
+        <DatePicker Grid.Row="2" DisplayDate="2019-01-01"/>
         <TextBlock Grid.Row="3"
                    Padding="5"
+                   FontSize="18"
                    Text="End Date"
                    TextAlignment="Center"/>
-        <DatePicker Grid.Row="4"/>
+        <DatePicker Grid.Row="4" DisplayDate="2020-03-13"/>
+        <Border Background="Transparent"
+                BorderBrush="DodgerBlue"
+                BorderThickness="1,1,1,1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                Grid.RowSpan="4"
+                >
+            <TextBlock Text="Students"
+                       Padding="5"
+                       FontSize="24"
+                       TextAlignment="Center"></TextBlock>
+        </Border>
+
+
+
+
 
 
     </Grid>
