@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KLsByx0MGI1wbxAYk3DAdtr3lmrWrRXnCU8m58767Q2jHpMr0RNEoWQ+5ZeUe0aWFMIt0NwC9wT8WZMQMk2ZqQ==",
+  "dgSpecHash": "woCXsvBoINvo3n9iCS5PRpbSBgtBcr9Guotx7X06ve6GmjOyOCSMLoirPeECWTOLiCYBiI3qIO3fVFQflvTH6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnd\\Desktop\\Projects\\wpf\\Attendance_WPF-App\\AttendanceAppUI\\AttendanceAppUI.csproj",
+  "projectFilePath": "C:\\Users\\johnd\\Desktop\\Projects\\Attendance_WPF-App\\AttendanceAppUI\\AttendanceAppUI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -42,13 +42,19 @@
                    FontSize="18"
                    Text="Start Date"
                    TextAlignment="Center"/>
-        <DatePicker Grid.Row="2" DisplayDate="2019-01-01"/>
+        <DatePicker Grid.Row="2" 
+                    Margin="10"
+                    Padding="5"
+                    DisplayDate="2019-01-01"/>
         <TextBlock Grid.Row="3"
                    Padding="5"
                    FontSize="18"
                    Text="End Date"
                    TextAlignment="Center"/>
-        <DatePicker Grid.Row="4" DisplayDate="2020-03-13"/>
+        <DatePicker Grid.Row="4" 
+                    Margin="10"
+                    Padding="5" 
+                    DisplayDate="2020-03-13"/>
         <Border Background="Transparent"
                 BorderBrush="DodgerBlue"
                 BorderThickness="1,1,1,1"
